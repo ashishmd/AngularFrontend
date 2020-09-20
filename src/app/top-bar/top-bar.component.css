@@ -1,4 +1,35 @@
+.top-bar {
+  padding: 20px;
+  background-color:#756d68;
+}
 
+.top-bar-item {
+  padding-left: 20px;
+  width: 200px;
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.left-pane h2 {
+  color: white;
+}
+
+.left-pane a {
+  text-decoration: none;
+}
+
+
+.right-pane {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

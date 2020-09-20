@@ -1,9 +1,37 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
+<div class='row top-bar'>
+  <div class='col-md-6 left-pane' >
 
-<a class="button fancy-button" routerLink="/cart"><i class="material-icons">shopping_cart</i>Checkout</a>
+    <div>
+      <a [routerLink]="['/']">
+        <h2>GetSQL</h2>
+      </a>
+    </div>
 
+    <div>
+      <a [routerLink]="['/']">
+        <h2>Docs</h2>
+      </a>
+    </div>
+
+    <div>
+      <a [routerLink]="['/']">
+        <h2>GetStarted</h2>
+      </a>
+    </div>
+
+    <div>
+      <a [routerLink]="['/']">
+        <h2>Generate Queries</h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-6 right-pane">
+    <a class="button fancy-button" href="https://github.com/ashishmd/getSQL" target="_blank">
+      <i class="material-icons">code</i>Github
+    </a>
+  </div>
+</div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
