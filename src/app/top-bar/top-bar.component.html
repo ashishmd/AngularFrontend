@@ -1,28 +1,12 @@
 <div class='row top-bar'>
   <div class='col-md-6 left-pane' >
 
-    <div>
-      <a [routerLink]="['']">
-        <h2>GetSQL</h2>
-      </a>
-    </div>
-
-    <div>
-      <a [routerLink]="['productlist']">
-        <h2>Docs</h2>
-      </a>
-    </div>
-
-    <div>
-      <a [routerLink]="['productlist']">
-        <h2>GetStarted</h2>
-      </a>
-    </div>
-
-    <div>
-      <a [routerLink]="['productlist']">
-        <h2>Make Queries</h2>
-      </a>
+    <div *ngFor="let tab of tabList">
+      <div [ngClass]="{'highlight':tab.name === activeTab && tab.noHighlight !== true}">
+        <a [routerLink]="[tab.link]" (click)="onSelect(tab.name)">
+          <h2>{{tab.name}}</h2>
+        </a>
+      </div>
     </div>
   </div>
 

@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
+  activeTab;
+  tabList;
   constructor() { }
 
   ngOnInit() {
+    this.activeTab = null;
+    this.tabList = [
+      {name: 'GetSQL', link: '', noHighlight: true},
+      {name: 'Docs', link: 'productlist'},
+      {name: 'Get Started', link: ''},
+      {name: 'Make Queries', link: ''},
+    ];
+  }
+
+  onSelect(tab) {
+    this.activeTab = tab;
   }
 
 }
