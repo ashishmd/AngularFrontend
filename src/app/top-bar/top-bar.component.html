@@ -1,16 +1,13 @@
 <div class='row top-bar'>
-  <div class='col-md-6 left-pane' >
-
-    <div *ngFor="let tab of tabList">
-      <div [ngClass]="{'highlight':tab.name === activeTab && tab.noHighlight !== true}">
-        <a [routerLink]="[tab.link]" (click)="onSelect(tab.name)">
-          <h2>{{tab.name}}</h2>
-        </a>
-      </div>
+  <div class='col-md-7 left-pane' >
+    <div *ngFor="let tab of tabList" [ngClass]="{'highlight':tab.name === activeTab && tab.noHighlight !== true}">
+      <a [routerLink]="[tab.link]" (click)="onSelect(tab.name)">
+        <h2>{{tab.name}}</h2>
+      </a>
     </div>
   </div>
 
-  <div class="col-md-6 right-pane">
+  <div class="col-md-5 right-pane">
     <a class="button fancy-button" href="https://github.com/ashishmd/getSQL" target="_blank">
       <i class="material-icons">code</i>Github
     </a>
