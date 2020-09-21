@@ -26,11 +26,15 @@
   padding-right: 10px;
 }
 
-.left-pane a {
+a, a:hover {
   text-decoration: none;
 }
 
 .left-pane h2:hover {
+  background-color: #443e3b;
+}
+
+.highlight {
   background-color: #443e3b;
 }
 
